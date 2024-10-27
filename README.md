@@ -22,6 +22,18 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## Arquitectura
+
+---
+Esta aplicación cuenta con una arquitectura hexagonal. La cual cuenta con tres capas
+- **Capa de Infraestructura**: es la capa responsable del funcionamiento de la aplicación (configuraciones, conexiones a recursos externos)
+- **Capa de Aplicacion**: es la capa encargada de la logica de negocio de la aplicación.
+- **Capa de Dominio**: es la capa encargada de implementar el modelo
+
+![arq.png](docs/arq.png))
+- **Java package**: El uso de packages debe tener la arquitectura hexagonal, y además, contener un package base con la siguiente nomenclatura: com.latam + it element + característica del componente.
+    - Ejemplo: **com.latam.ltmds.bl**
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
